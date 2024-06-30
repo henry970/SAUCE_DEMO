@@ -118,3 +118,5 @@ def test_order_product_on_sauce_demo_website6(login):
     test_login_page_on_sauce_demo.click_continue_button1()
     test_login_page_on_sauce_demo.click_finish_button()
     test_login_page_on_sauce_demo.click_back_button()
+
+# test
