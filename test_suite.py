@@ -96,16 +96,16 @@ def test_order_product_on_sauce_demo_website3(login):
 
 
 def test_order_product_on_sauce_demo_website5(login):
-    test_login_page_on_sauce_demo = OrderPageBoltJacket(login.driver)
-    test_login_page_on_sauce_demo.click_back_park_button()
-    test_login_page_on_sauce_demo.click_continue_button()
-    test_login_page_on_sauce_demo.click_checkout_button()
-    test_login_page_on_sauce_demo.enter_firstName("henry")
-    test_login_page_on_sauce_demo.enter_LastName("okolie")
-    test_login_page_on_sauce_demo.enter_Postal_Code("323")
-    test_login_page_on_sauce_demo.click_continue_button1()
-    test_login_page_on_sauce_demo.click_finish_button()
-    test_login_page_on_sauce_demo.click_back_button()
+    test_order_product_on_sauce_demo = OrderPageBoltJacket(login.driver)
+    test_order_product_on_sauce_demo.click_back_park_button()
+    test_order_product_on_sauce_demo.click_continue_button()
+    test_order_product_on_sauce_demo.click_checkout_button()
+    test_order_product_on_sauce_demo.enter_firstName("henry")
+    test_order_product_on_sauce_demo.enter_LastName("okolie")
+    test_order_product_on_sauce_demo.enter_Postal_Code("323")
+    test_order_product_on_sauce_demo.click_continue_button1()
+    test_order_product_on_sauce_demo.click_finish_button()
+    test_order_product_on_sauce_demo.click_back_button()
 
 
 def test_order_product_on_sauce_demo_website6(login):
