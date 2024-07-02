@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+from LogOutPagge.LogOut_page_test import LogOutPage
 from OrderProductPage.order_product_test import OrderPageLocators, OrderPagesBikeLight, OrderPageBoltTshirt, \
     OrderPageBoltOneSie, OrderPageBoltJacket, OrderPageBoltTshirtRed
 from loginPage.login_page_test import LoginPage
@@ -119,4 +120,8 @@ def test_order_product_on_sauce_demo_website6(login):
     test_login_page_on_sauce_demo.click_finish_button()
     test_login_page_on_sauce_demo.click_back_button()
 
-# test
+
+def test_log_out_page_on_sauce_demo_website(login):
+    test_log_out_page_on_sauce_demo = LogOutPage(login.driver)
+    test_log_out_page_on_sauce_demo.click_profile_tab()
+    test_log_out_page_on_sauce_demo.click_log_out_button()
